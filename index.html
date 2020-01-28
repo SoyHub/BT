@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <link rel="icon" href="img/1.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+    <nav class="menu">
+        <ul>
+            <li>Login</li>
+            <li><a href="" onclick="ppsShowPopup(100); return false;">About</a> </li>
+            <li>Contacts</li>
+        </ul>
+
+    </nav>
+
+    
+    <form action="home.html" method="GET">
+
+        <div class="imgcontainer">
+          <img src="img/1.png" height="50" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Username"  pattern="poco[0-9]{1,2}" required>
+
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Password" pattern="powercoders" required>
+      
+          <button type="submit">Login</button>
+        </div>
+      </form>
+
+      <!-- <div class="changeBack"></div> -->
+      <div class="formBack"></div>
+</body>
+
+
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+body {
+   font-family: 'Bangers', cursive;
+   padding: 0;
+    margin: 0 auto;
+    background-color: rgba(156, 156, 156, 0.226);
+}
+
+.menu{
+background-color: rgb(0, 0, 0);
+color: white;
+padding: 8px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    padding: 10%;
+}
+a:visited{
+    color: white;
+}
+form {
+    border: 3px solid #d4cbcb8e;
+    width: 500px;
+    color: rgb(0, 0, 0);
+    margin: 0 auto; 
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5%;
+    background-color: white;
+    position: relative;
+    
+    
+
+  }
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px thin rgb(0, 0, 0);
+    box-sizing: border-box;
+    
+    
+  }
+
+  
+button {
+    background-color: rgb(175, 6, 6);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 37%;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    border-radius: 5%;
+}
+  
+button:hover {
+    background-color: rgb(209, 6, 6);
+    color: rgb(255, 255, 255);
+  }
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+  
+.container {
+    padding: 16px;
+    /* display: none; */
+    opacity: 0;
+    height: 0;
+    transition: ease-in 1s ease-out 0;
+    /* background-color: transparent; */
+   
+  }
+
+
+    form:hover .container {
+
+    opacity: 1;
+    background-color: white;
+    height: auto;
+
+
+    }
+
+
+.formBack{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.801);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.8s;
+        z-index: -1;
+
+    }
+
+    form:hover + .formBack {
+
+        opacity: 1;
+    
+        }
+
+.changeBack{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.801);
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* opacity: 0; */
+            transition: all 0.8s;
+            /* z-index: -1; */
+    
+        }
+
+        nav:hover ~ .changeBack {
+
+            opacity: 1;
+        
+            }
